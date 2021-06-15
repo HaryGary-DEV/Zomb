@@ -410,7 +410,7 @@
     @endif
 
     <div class="table-show">
-        <table id="Table_" class="tableBd table-dark">
+        <table id="table" class="tableBd">
             <tr>
                 <th>name</th>
                 <th>email</th>
@@ -420,15 +420,15 @@
             </tr>
                 @foreach ($users as $user)
                     <tr>
-                    <th class="personalInfoFirstname personalInfo" contenteditable="false"
+                    <th class="personalInfoFirstname tables" id = "'a' +{{$user->id}}" contenteditable="false"
                         type="none">{{$user->name}}</th>
-                    <th class="personalInfoLastname personalInfo" contenteditable="false"
+                    <th class="personalInfoLastname tables" id = "'b' +{{$user->id}}" contenteditable="false"
                         type="none">{{$user->email}}</th>
-                    <th class="personalInfoBirthday personalInfo" contenteditable="false"
-                        type="none">{{$user->place}}</th>
-                    <th class="personalInfoAddress personalInfo" contenteditable="false"
+                    <th class="personalInfoBirthday tables" id = "'c' +{{$user->id}}" contenteditable="false"
+                        type="none">{{$user->Address}}</th>
+                    <th class="personalInfoAddress tables" id = "'d' +{{$user->id}}" contenteditable="false"
                         type="none">{{$user->phone_num}}</th>
-                    <th class="personalInfoOther personalInfo" contenteditable="false"
+                    <th class="personalInfoOther tables" id = "'e' +{{$user->id}}" contenteditable="false"
                         type="none">{{$user->br_day}}</th>
                     </tr>
                 @endforeach

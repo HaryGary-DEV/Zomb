@@ -10038,3 +10038,27 @@ h3 {
     margin-top: 25px;
     margin-left: 75%;
 }
+
+.table-show {
+    width: 700px;
+    text-align: center;
+    background-color: darkgray;
+    color: black;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9px;
+}
+
+.tableBd {
+    width: 700px;
+    text-align: center;
+    background-color: darkgray;
+    color: black;
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9px;
+}
