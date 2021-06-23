@@ -5,7 +5,7 @@
             <div class="col-sm-12">
                 <textarea class="form-control" rows="10" readonly="">{{messages.join('\n')}}</textarea>
                 <hr>
-                <input type="text" class="form-control" v-model="textMessage" @keyup.enter="sendMessage">
+                <input type="text" class="form-control" v-model="textMessage" @keyup.enter="sendMessage()">
             </div>
         </div>
     </div>
@@ -13,7 +13,7 @@
 
 <script>
     export default {
-        data: () => {
+        data() {
             return  {
                 messages: [],
                 textMessage: '',
@@ -23,14 +23,14 @@
 
             window.Echo.channel('chat')
             .listen('Message', ({message}) => {
-                this.messages.push(message)
+                this.messages.push(message);
             });
 
         },
         methods: {
-            sendMessage: () => {
+
+            sendMessage() {
                 axios.post('/messages', { body: this.textMessage});
-                this.message.push(this.textMessage);
                 this.textMessage = '';
             }
         }

@@ -1845,8 +1845,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-var _this2 = undefined;
-
 //
 //
 //
@@ -1879,12 +1877,9 @@ var _this2 = undefined;
   methods: {
     sendMessage: function sendMessage() {
       axios.post('/messages', {
-        body: _this2.textMessage
+        body: this.textMessage
       });
-
-      _this2.message.push(_this2.textMessage);
-
-      _this2.textMessage = '';
+      this.textMessage = '';
     }
   }
 });
@@ -43758,7 +43753,7 @@ var render = function() {
               ) {
                 return null
               }
-              return _vm.sendMessage.apply(null, arguments)
+              return _vm.sendMessage()
             },
             input: function($event) {
               if ($event.target.composing) {
