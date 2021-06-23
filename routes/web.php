@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsersController;
+use App\Http\Controllers\ChatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,29 +18,12 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'welcome']);
-
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
-
-Auth::routes();
-
-Route::get('/settings', [App\Http\Controllers\HomeController::class, 'settings']);
-
-Auth::routes();
-
-Route::get('/save-info', [App\Http\Controllers\HomeController::class, 'save']);
-
-Auth::routes();
-
-Route::get('/save-bonus-info', [App\Http\Controllers\HomeController::class, 'about']);
+Route::get('/', [UsersController::class, 'welcome']);
+Route::get('/orderBy/{order}/{type}', [UsersController::class, 'welcome']);
+Route::get('/home', [UsersController::class, 'index']);
+Route::get('/settings', [UsersController::class, 'settings']);
+Route::get('/save-info', [UsersController::class, 'save']);
+Route::get('/save-bonus-info', [UsersController::class, 'about']);
+Route::get('/change-user-status', [UsersController::class, 'changeUserStatus']);
+Route::get('/chat', [ChatController::class, 'chat']);
+Route::post('/messages', [ChatController::class, 'messages']);

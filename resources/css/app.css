@@ -5,12 +5,3 @@
     margin-right: auto;
 }
 
-.Table_, th, td {
-    margin: 50px;
-    height: 25px;
-    width: 450px;
-    text-align: center;
-    background-color: darkgray;
-    color: black;
-    border: 1px solid black;
-}

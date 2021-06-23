@@ -7,7 +7,7 @@
             <div class="card e-mail-login">
                 <div class="card-header p-3 mb-2 bg-success text-white login-text-style">{{ __('Login') }}</div>
 
-                <div class="card-body">
+                <div class="card-body-home">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -15,7 +15,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="example@mail.com">
+                                <input id="email" type="email" class="form-control form-input-custom @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="example@mail.com">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -29,7 +29,7 @@
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="*******">
+                                <input id="password" type="password" class="form-control form-input-custom @error('password') is-invalid @enderror" name="password" required autocomplete="current-password" placeholder="*******">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -44,7 +44,7 @@
                                 <div class="form-check">
                                     <input class="form-check-input check-remember-me" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                    <label class="form-check-label" for="remember">
+                                    <label class="form-check-label forgot-password" for="remember">
                                         {{ __('Remember Me') }}
                                     </label>
                                 </div>
@@ -58,7 +58,7 @@
                                 </button>
 
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <a class="btn btn-link forgot-password" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif

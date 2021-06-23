@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+    const ALIVE_STATUS = 'live';
     use HasFactory, Notifiable;
 
     /**
@@ -20,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'status'
     ];
 
     /**
