@@ -65,7 +65,7 @@ class UsersController extends Controller
 
     public function changeUserStatus(Request $request)
     {
-        $userId = $request->input('id');
+        $userId = $request->input('id');//тут писал остальное переделать
         $userStatus = $request->input('status');
         $user = User::find($userId);
         $user->status = $userStatus;

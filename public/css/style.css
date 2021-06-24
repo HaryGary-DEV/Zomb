@@ -5,15 +5,26 @@ body {
 body .home-header {
   background-color: #333333 !important;
 }
-body .home-header .href-navbar {
+body .home-header .navbar-brand {
   color: #38c172;
 }
-body .home-header .href-navbar:hover {
+body .home-header .navbar-brand:hover {
   color: white;
   /* Цвет ссылки при наведении */
 }
 body .home-header .nav-name {
   color: #38c172 !important;
+}
+body .home-header .nav-back {
+  color: #38c172 !important;
+  background-color: #333333 !important;
+}
+body .home-header .nav-text-drop:hover {
+  color: #ffffff !important;
+  background-color: #38c172 !important;
+}
+body .home-header .nav-text-drop {
+  color: #38c172;
 }
 body .home-header .nav-name:hover {
   color: white !important;
@@ -24,68 +35,80 @@ body .home-header .nav-logout-text {
 body .home-header .nav-logout-text:hover {
   color: white !important;
 }
-body .home-box .AccountName {
+body .col-md-8 .AccountName {
   height: 50px;
 }
-body .home-box .home-card {
+body .col-md-8 .card {
   background-color: #333333;
 }
-body .home-box .home-card .card-body-home .wellCUM-text {
+body .col-md-8 .card .card-body .wellCUM-text {
   font-size: 16px;
-  color: #2a9055;
+  color: #38c172;
 }
-body .home-box .home-card .card-body-home .info-body {
+body .col-md-8 .card .card-body .info-body {
   margin-right: 5px;
   margin-left: auto;
-  color: rgba(42, 144, 85, 0.75);
+  color: #38c172;
   width: 300px;
 }
-body .home-box .home-card .bonus-info-pos {
+body .col-md-8 .card .bonus-info-pos {
   margin-left: auto;
   margin-right: auto;
   width: auto;
   height: 150px;
 }
-body .home-box .home-card .bonus-info-pos .bonus-info {
+body .col-md-8 .card .bonus-info-pos .bonus-info {
   width: 700px;
   height: 150px;
   margin-left: 15px;
   margin-right: 15px;
-  border: 2px solid #2a9055;
+  border: 2px solid #38c172;
   border-radius: 4px;
-  color: #2a9055;
+  color: #38c172;
   background-color: #202020;
   padding: 15px;
   resize: none;
 }
-body .home-box .home-card .accept-about {
+body .col-md-8 .card .accept-about {
   height: 50px;
   width: 125px;
   margin-top: 25px;
   margin-left: 75%;
   margin-bottom: 15px;
 }
-body .home-box .home-card .login-text-style {
+body .col-md-8 .card .login-text-style {
   text-align: center;
   font-size: 24px;
 }
+body .button-send {
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: 90% !important;
+}
+body .chat-card {
+  padding-bottom: 15px !important;
+}
+body .global-chat {
+  resize: none;
+}
 body .form-input-custom {
-  background-color: #202020;
-  border-color: #2a9055;
+  background-color: #202020 !important;
+  border-color: #38c172;
+  color: #38c172;
 }
 body .forgot-password {
-  color: #2a9055;
+  color: #38c172;
 }
 body .forgot-password:hover {
   color: #ffffff;
 }
 body .form-input-custom:focus {
   background-color: #202020;
-  border-color: #2a9055;
-  color: #2a9055;
+  border-color: #38c172;
+  color: #38c172;
 }
 body .text-md-right {
-  color: #2a9055;
+  color: #38c172;
 }
 body .home-info {
   height: 500px;
@@ -130,14 +153,14 @@ body .add-shelter {
 body .order-by {
   width: 150px;
   height: 37px;
-  color: #2a9055;
+  color: #38c172;
   background-color: #333333;
   border-color: #2a9055;
   margin-right: 10px;
   border-radius: 4px;
 }
 body .order-by option {
-  color: #2a9055;
+  color: #38c172;
   background-color: #333333;
   border-color: #2a9055;
   width: 150px;
@@ -146,16 +169,16 @@ body .order-by option {
 body .order-type {
   width: 150px;
   height: 37px;
-  color: #2a9055;
+  color: #38c172;
   background-color: #333333;
-  border-color: #2a9055;
+  border-color: #38c172;
   border-radius: 4px;
   margin-right: 10px;
 }
 body .order-type option {
-  color: #2a9055;
+  color: #38c172;
   background-color: #333333;
-  border-color: #2a9055;
+  border-color: #38c172;
   width: 150px;
   margin-right: 10px;
 }

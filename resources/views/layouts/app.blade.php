@@ -32,6 +32,9 @@
                 <a class="navbar-brand href-navbar" href="{{ url('/') }}">
                     Users Info
                 </a>
+                <a class="navbar-brand href-navbar" href="{{ url('/chat') }}">
+                    Global chat
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -63,14 +66,14 @@
                                     {{ Auth::user()->name }}
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" onclick="goHome({{(auth()->user())->id}})">
+                                <div class="dropdown-menu dropdown-menu-right nav-back" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item nav-text-drop" onclick="goHome({{(auth()->user())->id}})">
                                         {{ __('Go home') }}
                                     </a>
-                                    <a class="dropdown-item" onclick="settinds({{(auth()->user())->id}})">
+                                    <a class="dropdown-item nav-text-drop" onclick="settinds({{(auth()->user())->id}})">
                                         {{ __('Settings') }}
                                     </a>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a class="dropdown-item nav-text-drop" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
