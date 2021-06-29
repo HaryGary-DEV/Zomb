@@ -32,7 +32,7 @@
                 <a class="navbar-brand href-navbar" href="{{ url('/') }}">
                     Users Info
                 </a>
-                <a class="navbar-brand href-navbar" href="{{ url('/chat') }}">
+                <a class="navbar-brand href-navbar" href="{{ url('/chat-list') }}">
                     Global chat
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

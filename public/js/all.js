@@ -59,6 +59,22 @@ function changeUserStatus(id)
     }
 }
 
+function startChat (userId, currentUserId)
+{
+    $.ajax({
+        url: '/start-chat',
+        type: 'get',
+        dataType: 'json',
+        data: {
+            'userId': userId,
+            'currentUserId': currentUserId,
+        },
+    }).done( function (users) {
+        console.log(users['user1']);
+        console.log(users['user2']);
+    })
+}
+
 function changeStatus(id ,status)
 {
     $.ajax({

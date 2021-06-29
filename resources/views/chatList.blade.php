@@ -7,7 +7,11 @@
                     <div
                         class="card-header p-3 mb-2 bg-success text-white AccountName">{{ __('Public chat') }}
                     </div>
-                    <private-chat :room="{{$room}}"></private-chat>
+                    @foreach ($rooms as $room)
+                        <tr>
+                            {{$room->id,   $room->first_user_name}}<br>
+                        </tr>
+                    @endforeach
                 </div>
             </div>
         </div>
