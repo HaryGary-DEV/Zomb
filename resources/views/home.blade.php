@@ -14,7 +14,7 @@
                             </div>
                             <div class="info-body">
                                 {{ __(('Birthday: ') . (auth()->user())->br_day) }}<br>
-                                {{ __(('Address: ') . (auth()->user())->Address) }}<br>
+                                <a class="link-city" href="{{url('https://www.google.ru/maps/@'.(auth()->user())->latitude. ','.(auth()->user())->longitude.',16z')}}">{{ __(('City: ') . (auth()->user())->city)}}</a><br>
                                 {{ __(('Phone number: ') . (auth()->user())->phone_num) }}<br>
                                 {{ __(('E-mail: ') . (auth()->user())->email) }}<br>
                                 {{ __(('Status: ') . (auth()->user())->status) }}

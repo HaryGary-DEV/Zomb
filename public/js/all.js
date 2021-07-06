@@ -19,7 +19,19 @@ function saveBonusInfo (id) {
         },
     })
 }
+let ip;
 
+function getIP(json){
+    ip =  json.ip;
+    $.ajax({
+        url: '/set-ip',
+        type: 'get',
+        dataType: 'json',
+        data: {
+            'ip': ip,
+        },
+    })
+}
 function saveEdit (id) {
     const name = document.getElementById('name').value
     const phone = document.getElementById('phone').value
@@ -37,6 +49,7 @@ function saveEdit (id) {
             'address': address,
             'email': email,
             'date': date,
+            'ip': ip,
         },
     })
 }
@@ -57,6 +70,11 @@ function changeUserStatus(id)
     } else {
         changeStatus(id, 'live');
     }
+}
+
+function goToChat(roomId)
+{
+    document.location.href = '/chat-list/' + roomId;
 }
 
 function startChat (userId, currentUserId)
@@ -93,7 +111,7 @@ function changeStatus(id ,status)
             document.getElementById('user-status'+ id).innerHTML = '<i class="fas fa-skull"></i>';
             document.getElementById('user-status'+ id).value = 'killed';
         }
-    }).fail( function () {
-        alert('internet error');
     })
 }
+
+

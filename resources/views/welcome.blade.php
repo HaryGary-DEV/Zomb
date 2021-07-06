@@ -52,7 +52,9 @@
                         <td class="personalInfoLastname tables" id="'b' +{{$user->id}}" contenteditable="false"
                             type="none">{{$user->email}}</td>
                         <td class="personalInfoBirthday tables" id="'c' +{{$user->id}}" contenteditable="false"
-                            type="none">{{$user->Address}}</td>
+                            type="none">
+                            <a class="link-city" href="{{url('https://www.google.ru/maps/@' . $user->latitude . ',' . $user->longitude . ',16z')}}">{{ __(('City: ') . $user->city)}}</a><br>
+                        </td>
                         <td class="personalInfoAddress tables" id="'d' +{{$user->id}}" contenteditable="false"
                             type="none">{{$user->phone_num}}</td>
                         <td class="personalInfoOther tables" id="'e' +{{$user->id}}" contenteditable="false"

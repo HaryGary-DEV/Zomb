@@ -1,6 +1,9 @@
 @charset "UTF-8";
 body {
   background: #202020;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
 }
 body .home-header {
   background-color: #333333 !important;
@@ -89,6 +92,7 @@ body .chat-card {
   padding-bottom: 15px !important;
 }
 body .global-chat {
+  height: 500px;
   resize: none;
 }
 body .form-input-custom {
@@ -155,16 +159,40 @@ body .order-by {
   height: 37px;
   color: #38c172;
   background-color: #333333;
-  border-color: #2a9055;
+  border-color: #38c172;
   margin-right: 10px;
   border-radius: 4px;
 }
 body .order-by option {
   color: #38c172;
   background-color: #333333;
-  border-color: #2a9055;
+  border-color: #38c172;
   width: 150px;
   margin-right: 10px;
+}
+body .chat {
+  width: 550px;
+}
+body .chat-card-inner {
+  padding: 5px;
+}
+body .user-list-chat {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  overflow-y: scroll;
+  height: 650px;
+  width: 165px;
+}
+body .chat-dont-created {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 350px;
+  height: 35px;
+  font-size: 24px;
+  text-align: center;
+  color: #38c172;
 }
 body .order-type {
   width: 150px;
@@ -182,6 +210,29 @@ body .order-type option {
   width: 150px;
   margin-right: 10px;
 }
+body ::-webkit-scrollbar {
+  width: 7.5px;
+}
+body ::-webkit-scrollbar-track {
+  background: #202020;
+}
+body ::-webkit-scrollbar-thumb {
+  background: #38c172;
+}
+body ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+body .btn-chat {
+  width: 150px;
+  height: 35px;
+  padding: 5px;
+  margin: 2px;
+}
+body .table-chat {
+  padding: 5px;
+  border: 1px solid #c7c7c7;
+  margin: 2px;
+}
 body .order-zone {
   width: 700px;
   height: 50px;
@@ -192,4 +243,12 @@ body .order-zone {
 body .btn-color {
   background: #38c172;
   color: white;
+}
+body .link-city {
+  color: #38c172;
+  text-decoration: underline;
+}
+body .link-city:hover {
+  color: #ffffff;
+  text-decoration: none;
 }

@@ -12,7 +12,7 @@
                             <div class="row chat-card-inner">
                                 <div class="user-list-chat">
                                     <table>
-                                        @foreach ($roomList as $key => $rl)
+                                        @foreach ($roomList as $key=>$rl)
                                             <tr>
                                                 <td class="chat-button-{{auth()->user()->rooms[$key]->room_id}}">
                                                     <button class="btn btn-color btn-chat" id="btn-chat"
@@ -24,9 +24,6 @@
                                         @endforeach
                                     </table>
                                 </div>
-                                <div class="chat" id="chat">
-                                    <private-chat :room="{{$room}}"></private-chat>
-                                </div>
                             </div>
                         @endauth
                     @else
@@ -37,6 +34,5 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 @endsection

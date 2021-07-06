@@ -12,8 +12,21 @@ class Room extends Model
 
     protected $guarded =[];
 
+    protected $table = 'rooms';
+    public $timestamps = false;
+
     public function users()
     {
-        return $this->belongsToMany(User::class);
+        return $this->hasMany(User::class, 'id', 'user_id');
+    }
+
+    public function userRoom()
+    {
+        return $this->hasOne(RoomUser::class);
+    }
+
+    public function messages()
+    {
+        return $this->hasMany(Messages::class);
     }
 }

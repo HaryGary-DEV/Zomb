@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Broadcast;
 |
 */
 
-Broadcast::channel('room.{id}', function ($user, $room_id) {
-    return $user->rooms->contains($room_id);
+Broadcast::channel('room.{room_id}', function ($user, $room_id) {
+    return $user->rooms->contains('room_id', $room_id);
 });

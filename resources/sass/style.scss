@@ -113,6 +113,7 @@ body {
     }
 
     .global-chat {
+        height: 500px;
         resize: none;
     }
 
@@ -196,16 +197,44 @@ body {
         height: 37px;
         color: #38c172;
         background-color: #333333;
-        border-color: #2a9055;
+        border-color: #38c172;
         margin-right: 10px;
         border-radius: 4px;
         option {
             color: #38c172;
             background-color: #333333;
-            border-color: #2a9055;
+            border-color: #38c172;
             width: 150px;
             margin-right: 10px;
         }
+    }
+    .chat{
+        width: 550px;
+    }
+
+    .chat-card-inner {
+        padding: 5px;
+    }
+
+    .user-list-chat {
+        margin-left: 15px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        overflow-y: scroll;
+        height:650px;
+        width: 165px;
+    }
+
+    .chat-dont-created {
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        width: 350px;
+        height: 35px;
+        font-size: 24px;
+        text-align: center;
+        color: #38c172;
     }
 
     .order-type {
@@ -227,6 +256,38 @@ body {
         }
     }
 
+    ::-webkit-scrollbar {
+        width: 7.5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #202020 ;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #38c172;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .btn-chat {
+        width: 150px;
+        height: 35px;
+        padding: 5px;
+        margin: 2px;
+    }
+
+    .table-chat {
+        padding: 5px;
+        border: 1px solid #c7c7c7;
+        margin: 2px;
+    }
+
     .order-zone {
         width: 700px;
         height: 50px;
@@ -239,5 +300,15 @@ body {
     .btn-color {
         background: #38c172;
         color: white;
+    }
+
+    .link-city {
+        color: #38c172;
+        text-decoration: underline;
+    }
+
+    .link-city:hover {
+        color: #ffffff;
+        text-decoration: none;
     }
 }

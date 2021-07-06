@@ -36,10 +36,10 @@
                     </div>
 
                     <div class="form-group row">
-                        <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Address') }}</label>
+                        <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('City') }}</label>
 
                         <div class="col-md-6">
-                            <input id="address" type="text" class="form-control form-input-custom @error('name') is-invalid @enderror" name="name" value="{{ (auth()->user())->Address }}" required autocomplete="name" autofocus placeholder="where are you">
+                            <input readonly id="address" type="text" class="form-control form-input-custom @error('name') is-invalid @enderror" name="name" value="{{ (auth()->user())->city }}" required autocomplete="name" autofocus placeholder="where are you">
 
                             @error('name')
                             <span class="invalid-feedback" role="alert">
