@@ -38,6 +38,8 @@ function saveEdit (id) {
     const address = document.getElementById('address').value
     const email = document.getElementById('email').value
     const date = document.getElementById('date').value
+    const steam = document.getElementById('steam').value
+    const telegram = document.getElementById('telegram').value
     $.ajax({
         url: '/save-info',
         type: 'get',
@@ -50,6 +52,8 @@ function saveEdit (id) {
             'email': email,
             'date': date,
             'ip': ip,
+            'steam': steam,
+            'telegram': telegram,
         },
     })
 }
@@ -114,4 +118,7 @@ function changeStatus(id ,status)
     })
 }
 
+function startToUserProfile (id) {
+    document.location.href = "/user/" + id;
+}
 

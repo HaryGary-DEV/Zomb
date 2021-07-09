@@ -70,6 +70,7 @@
                         <td class="personalInfoOther table-finish">
                             <button class="btn btn-color" onclick="changeUserStatus({{$user->id}})">Change status</button>
                             <button class="btn btn-color" onclick="startChat({{$user->id}}, {{(auth()->user())->id}})"><i class="fas fa-envelope"></i></button>
+                            <button class="btn btn-color" onclick="startToUserProfile({{$user->id}})"><i class="fas fa-user"></i></button>
                         </td>
                     </tr>
                 @endforeach

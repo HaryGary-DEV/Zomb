@@ -77,34 +77,6 @@
                         </div>
                     </div>
 
-                    <div class="form-group row">
-                        <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Link to steam account') }}</label>
-
-                        <div class="col-md-6">
-                            <input id="steam" type="text" class="form-control form-input-custom @error('steam') is-invalid @enderror" value="{{ (auth()->user())->steam }}" required autocomplete="email" placeholder="https://steamcommunity.com/id/username/">
-
-                            @error('steam')
-                            <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                            @enderror
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Link to telegram account') }}</label>
-
-                        <div class="col-md-6">
-                            <input id="telegram" type="telegram" class="form-control form-input-custom @error('telegram') is-invalid @enderror" name="email" value="{{ (auth()->user())->telegram }}" required autocomplete="email" placeholder="https://t.me/username">
-
-                            @error('telegram')
-                            <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                            @enderror
-                        </div>
-                    </div>
-
                     @if (Route::has('password.request'))
                         <a class="btn btn-link forgot-password" href="{{ route('password.request') }}">
                             {{ __('Forgot Your Password?') }}

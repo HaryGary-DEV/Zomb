@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Events\SendMail;
+use App\Http\Requests\UserRequest;
+use App\Mail\HaryGaryBestMailEver;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
@@ -52,29 +55,38 @@ class UsersController extends Controller
         return response()->json($user);
     }
 
-    public function save(Request $request)
+    public function save(UserRequest $request)
     {
-        $result = file_get_contents('http://api.ipapi.com/' .$request->input('ip') .'?access_key=608be249c170a6cdbcb7a69cbf44bd1b&output=json');
-        $locationInfo = json_decode($result);
+        $respons = file_get_contents('http://api.ipapi.com/' .$request->input('ip') .'?access_key=608be249c170a6cdbcb7a69cbf44bd1b&output=json');
+        $locationInfo = json_decode($respons);
         $longitude = $locationInfo->longitude;
         $latitude = $locationInfo->latitude;
-        $user = User::find($request->input('id'));
+        $user = auth()->user();
         $user->name = $request->input('name');
         $user->phone_num = $request->input('phone');
         $user->city = $locationInfo->city;
         $user->email = $request->input('email');
         $user->br_day = $request->input('date');
+        $user->steam = $request->input('steam');
+        $user->telegram = $request->input('telegram');
         $user->longitude = $longitude;
         $user->latitude = $latitude;
-        $user->save();
 
+        if($user->getDirty()){
+            $user->save();
+
+            event(new SendMail(auth()->user()));
+
+            return response()->json($user);
+        }
+        $user->save();
         return response()->json($user);
     }
 
     public function about(Request $request)
     {
         $about = $request->input('info');
-        $user = User::find($request->input('id'));
+        $user = auth()->user();
         $user->bonus_info = $about;
         $user->save();
         return view('settings');
@@ -87,6 +99,11 @@ class UsersController extends Controller
         $user = User::find($userId);
         $user->status = $userStatus;
         $user->save();
-        return json_encode(['message' => $userStatus]);
+        return response()->json(['message' => $userStatus]);
+    }
+
+    public function userProfile($id)
+    {
+        return view('userProfile', ['user' => User::find($id)]);
     }
 }

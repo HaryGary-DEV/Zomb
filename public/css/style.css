@@ -252,3 +252,45 @@ body .link-city:hover {
   color: #ffffff;
   text-decoration: none;
 }
+body .linked-accounts {
+  color: #2a9055;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 80%;
+}
+body .linked-accounts-icons {
+  margin: 5px;
+  font-size: 25px !important;
+}
+body .unlinked-accounts-icons {
+  color: #ffffff;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: #38c172;
+  border: #38c172 solid 2px;
+  border-radius: 4px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+body .unlinked-accounts-icons:hover {
+  color: #dedede;
+  text-decoration: none;
+}
+body .linked-account-link {
+  color: #ffffff;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #38c172;
+  border: #38c172 solid 2px;
+  border-radius: 4px;
+}
+body .linked-account-link:hover {
+  color: #dedede;
+  text-decoration: none;
+}

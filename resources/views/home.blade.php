@@ -14,7 +14,8 @@
                             </div>
                             <div class="info-body">
                                 {{ __(('Birthday: ') . (auth()->user())->br_day) }}<br>
-                                <a class="link-city" href="{{url('https://www.google.ru/maps/@'.(auth()->user())->latitude. ','.(auth()->user())->longitude.',16z')}}">{{ __(('City: ') . (auth()->user())->city)}}</a><br>
+                                <a class="link-city"
+                                   href="{{url('https://www.google.ru/maps/@'.(auth()->user())->latitude. ','.(auth()->user())->longitude.',16z')}}">{{ __(('City: ') . (auth()->user())->city)}}</a><br>
                                 {{ __(('Phone number: ') . (auth()->user())->phone_num) }}<br>
                                 {{ __(('E-mail: ') . (auth()->user())->email) }}<br>
                                 {{ __(('Status: ') . (auth()->user())->status) }}
@@ -27,10 +28,29 @@
                                   placeholder="Write some text about you...">{{ __((auth()->user())->bonus_info)}}</textarea>
 
                     </div>
+                    <div class="linked-accounts">
+                        <a class="linked-account-link"
+                            @if(!empty((auth()->user())->steam))
+                                href="{{(auth()->user())->steam}}"
+                            @else
+                                href="/settings"
+                            @endif
+                        >
+                            <i class="fab fa-steam-square linked-accounts-icons"></i>
+                        </a>
+                        <a class="linked-account-link"
+                            @if(!empty((auth()->user())->telegram))
+                                href="{{(auth()->user())->telegram}}"
+                            @else
+                                href="/settings"
+                            @endif
+                        >
+                            <i class="fab fa-telegram linked-accounts-icons"></i>
+                        </a>
+                    </div>
                     <button type="button" class="btn btn-outline-success accept-about"
                             onclick="saveBonusInfo({{((auth()->user())->id)}})">Apply chenges
                     </button>
-
                 </div>
             </div>
         </div>

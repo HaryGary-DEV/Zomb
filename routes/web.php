@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UsersController;
 use App\Http\Controllers\ChatController;
+use \App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,8 +29,11 @@ Route::get('/change-user-status', [UsersController::class, 'changeUserStatus']);
 Route::get('/chat-list/{id}', [ChatController::class, 'chatList']);
 Route::get('/chat-list', [ChatController::class, 'allChatsList']);
 Route::get('/start-chat', [ChatController::class, 'startChat']);
-Route::post('/messages', [ChatController::class, 'messages']);
 Route::get('/history', [ChatController::class, 'history']);
 Route::get('/save-messages', [ChatController::class, 'saveMessages']);
-Route::post('/allMessages', [ChatController::class, 'allMessages']);
 Route::get('/set-ip', [UsersController::class, 'setIp']);
+Route::get('/user/{id}', [UsersController::class, 'userProfile']);
+Route::get('send-mail', [MailController::class, 'sendMail']);
+
+Route::post('/messages', [ChatController::class, 'messages']);
+Route::post('/allMessages', [ChatController::class, 'allMessages']);

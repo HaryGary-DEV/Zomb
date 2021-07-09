@@ -71,7 +71,7 @@ class ChatController extends Controller
                 $this->createNewUser($newRoom, $userSecond);
             }
         }
-        return json_encode(['user1' => $userFirst, 'user2' => $userSecond]);
+        return response()->json(['user1' => $userFirst, 'user2' => $userSecond]);
     }
 
     function createNewUser($newRoom, $user)
