@@ -1,364 +1,725 @@
 
 body {
-    .home-header {
-        background-color: #333333 !important;
+    @media screen and (min-device-width: 800px) {
 
-        .navbar-brand {
-            color: #38c172;
+        .home-header {
+            background-color: #333333 !important;
+
+            .navbar-brand {
+                color: #bc38c1;
+            }
+
+            .navbar-brand:hover {
+                color: rgb(255, 255, 255); /* Цвет ссылки при наведении */
+            }
+
+            .nav-name {
+                color: #bc38c1 !important;
+            }
+
+            .nav-back {
+                color: #bc38c1 !important;
+                background-color: #333333 !important;
+            }
+
+            .nav-text-drop:hover {
+                color: #ffffff !important;
+                background-color: #bc38c1 !important;
+            }
+
+            .nav-text-drop {
+                color: #bc38c1;
+            }
+
+            .nav-name:hover {
+                color: rgb(255, 255, 255) !important;
+            }
+
+
+            .nav-logout-text {
+                color: #bc38c1 !important;
+            }
+
+            .nav-logout-text:hover {
+                color: rgb(255, 255, 255) !important;
+            }
         }
 
-        .navbar-brand:hover {
-            color: rgb(255, 255, 255); /* Цвет ссылки при наведении */
+        .col-md-8 {
+            .AccountName {
+                background-color: #bc38c1!important;
+                height: 50px;
+            }
+
+            .card {
+                background-color: #333333;
+
+                .card-body {
+                    .wellCUM-text {
+                        font-size: 16px;
+                        color: #bc38c1;
+                    }
+
+                    .info-body {
+                        margin-right: 5px;
+                        margin-left: auto;
+                        color: #bc38c1;
+                        width: 300px;
+                    }
+                }
+
+                .bonus-info-pos {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
+                    height: max-content;
+                    .bonus-info {
+                        width: 100%;
+                        height: 150px;
+                        border: 2px solid #bc38c1;
+                        border-radius: 4px;
+                        color: #bc38c1;
+                        background-color: #202020;
+                        padding: 15px;
+                        resize: none;
+                    }
+                }
+
+                .accept-about {
+                    color: #bc38c1;
+                    border-color: #bc38c1;
+                    height: 50px;
+                    width: 125px;
+                    margin-top: 25px;
+                    margin-left: 75%;
+                    margin-bottom: 15px;
+                }
+
+                .login-text-style {
+                    text-align: center;
+                    font-size: 24px;
+                }
+            }
         }
 
-        .nav-name {
-            color: #38c172!important;
+        .button-send {
+            margin-top: 5px;
+            margin-right: auto;
+            margin-left: 90% !important;
         }
 
-        .nav-back {
-            color: #38c172!important;
-            background-color: #333333!important;
+        .chat-card {
+            padding-bottom: 15px !important;
         }
 
-        .nav-text-drop:hover {
-            color: #ffffff!important;
-            background-color: #38c172!important;
+        .global-chat {
+            height: 500px;
+            resize: none;
         }
 
-        .nav-text-drop {
-            color: #38c172;
+        .form-input-custom {
+            background-color: #202020 !important;
+            border-color: #bc38c1;
+            color: #bc38c1;
         }
 
-        .nav-name:hover {
-            color: rgb(255, 255, 255)!important;
+        .forgot-password {
+            color: #bc38c1;
+        }
+
+        .forgot-password:hover {
+            color: #ffffff;
+        }
+
+        .form-input-custom:focus {
+            background-color: #202020;
+            border-color: #bc38c1;
+            color: #bc38c1;
+        }
+
+        .text-md-right {
+            color: #bc38c1;
+        }
+
+        .home-info {
+            height: 500px;
         }
 
 
-        .nav-logout-text {
-            color: #38c172!important;
+        .tableBd {
+            width: 1200px;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 9px;
         }
 
-        .nav-logout-text:hover {
-            color: rgb(255, 255, 255)!important;
+        .column-name {
+            background-color: #1d1d1d;
+            color: #bc38c1;
+            border: 1px solid #000000;
+            border-radius: 9px;
+        }
+
+        .tables {
+            background-color: #333333;
+            color: #bc38c1;
+
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        .tables-first {
+            color: #bc38c1;
+
+            background-color: #333333;
+            border: 1px solid black;
+        }
+
+        .table-finish {
+            color: #bc38c1;
+
+            background-color: #333333;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        .add-shelter {
+            height: 40px;
+            width: 125px;
+            margin-top: 25px;
+            margin-left: 60%;
+        }
+
+        .order-by {
+            width: 150px;
+            height: 37px;
+            color: #bc38c1;
+            background-color: #333333;
+            border-color: #bc38c1;
+            margin-right: 10px;
+            border-radius: 4px;
+
+            option {
+                color: #bc38c1;
+                background-color: #333333;
+                border-color: #bc38c1;
+                width: 150px;
+                margin-right: 10px;
+            }
+        }
+        .chat {
+            width: 550px;
+        }
+
+        .chat-card-inner {
+            padding: 5px;
+        }
+
+        .user-list-chat {
+            margin-left: 15px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            overflow-y: scroll;
+            height: 650px;
+            width: 165px;
+        }
+
+        .chat-dont-created {
+
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5px;
+            width: 350px;
+            height: 35px;
+            font-size: 24px;
+            text-align: center;
+            color: #bc38c1;
+        }
+
+        .order-type {
+
+            width: 150px;
+            height: 37px;
+            color: #bc38c1;
+            background-color: #333333;
+            border-color: #bc38c1;
+            border-radius: 4px;
+            margin-right: 10px;
+
+            option {
+                color: #bc38c1;
+                background-color: #333333;
+                border-color: #bc38c1;
+                width: 150px;
+                margin-right: 10px;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 7.5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #202020;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #bc38c1;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .btn-chat {
+            width: 150px;
+            height: 35px;
+            padding: 5px;
+            margin: 2px;
+        }
+
+        .table-chat {
+            padding: 5px;
+            border: 1px solid #c7c7c7;
+            margin: 2px;
+        }
+
+        .order-zone {
+            width: 700px;
+            height: 50px;
+            margin-top: 25px;
+            margin-left: 55%;
+            margin-right: auto;
+        }
+
+
+        .btn-color {
+            background: #bc38c1;
+            color: white;
+        }
+
+        .link-city {
+            color: #bc38c1;
+            text-decoration: underline;
+        }
+
+        .link-city:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .linked-accounts {
+            color: #bc38c1;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 80%;
+        }
+
+        .linked-accounts-icons {
+            margin: 5px;
+            font-size: 25px !important;
+        }
+
+        .unlinked-accounts-icons {
+            color: #ffffff;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            background-color: #bc38c1;
+            border: #bc38c1 solid 2px;
+            border-radius: 4px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+
+        .unlinked-accounts-icons:hover {
+            color: #dedede;
+            text-decoration: none;
+        }
+
+        .linked-account-link {
+            color: #ffffff;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color: #bc38c1;
+            border: #bc38c1 solid 2px;
+            border-radius: 4px;
+        }
+
+        .linked-account-link:hover {
+            color: #dedede;
+            text-decoration: none;
         }
     }
 
     background: #202020;
+    @media screen and (max-device-width: 800px) {
+        .home-header {
+            background-color: #333333 !important;
 
-    .col-md-8 {
-        .AccountName {
-            height: 50px;
+            .navbar-brand {
+                color: #38c172;
+            }
+
+            .navbar-brand:hover {
+                color: rgb(255, 255, 255); /* Цвет ссылки при наведении */
+            }
+
+            .nav-name {
+                color: #38c172 !important;
+            }
+
+            .nav-back {
+                color: #38c172 !important;
+                background-color: #333333 !important;
+            }
+
+            .nav-text-drop:hover {
+                color: #ffffff !important;
+                background-color: #38c172 !important;
+            }
+
+            .nav-text-drop {
+                color: #38c172;
+            }
+
+            .nav-name:hover {
+                color: rgb(255, 255, 255) !important;
+            }
+
+
+            .nav-logout-text {
+                color: #38c172 !important;
+            }
+
+            .nav-logout-text:hover {
+                color: rgb(255, 255, 255) !important;
+            }
         }
 
-        .card {
-            background-color: #333333;
-
-            .card-body {
-                .wellCUM-text {
-                    font-size: 16px;
-                    color: #38c172;
-                }
-
-                .info-body {
-                    margin-right: 5px;
-                    margin-left: auto;
-                    color: #38c172;
-                    width: 300px;
-                }
-            }
-
-            .bonus-info-pos {
-                margin-left: auto;
-                margin-right: auto;
-                width: auto;
-                height: 150px;
-
-                .bonus-info {
-                    width: 700px;
-                    height: 150px;
-                    margin-left: 15px;
-                    margin-right: 15px;
-                    border: 2px solid #38c172;
-                    border-radius: 4px;
-                    color: #38c172;
-                    background-color: #202020;
-                    padding: 15px;
-                    resize: none;
-                }
-            }
-
-            .accept-about {
+        .col-md-8 {
+            .AccountName {
                 height: 50px;
-                width: 125px;
-                margin-top: 25px;
-                margin-left: 75%;
-                margin-bottom: 15px;
             }
 
-            .login-text-style {
-                text-align: center;
-                font-size: 24px;
+            .card {
+                background-color: #333333;
+
+                .card-body {
+                    .wellCUM-text {
+                        font-size: 16px;
+                        color: #38c172;
+                    }
+
+                    .info-body {
+                        margin-right: auto;
+                        margin-left: auto;
+                        color: #38c172;
+                        width: 300px;
+                    }
+                }
+
+                .bonus-info-pos {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
+                    height: max-content;
+                    .bonus-info {
+                        width: 100%;
+                        height: 150px;
+                        border: 2px solid #38c172;
+                        border-radius: 4px;
+                        color: #38c172;
+                        background-color: #202020;
+                        padding: 15px;
+                        resize: none;
+                    }
+                }
+
+                .accept-about {
+                    height: 50px;
+                    width: 25%;
+                    margin-top: 25px;
+                    margin-left: 60%;
+                    margin-bottom: 15px;
+                }
+
+                .login-text-style {
+                    text-align: center;
+                    font-size: 24px;
+                }
             }
         }
-    }
 
-    .button-send {
-        margin-top: 5px;
-        margin-right: auto;
-        margin-left: 90% !important;
-    }
+        .button-send {
+            margin-top: 5px;
+            margin-right: auto;
+            margin-left: 90% !important;
+        }
 
-    .chat-card {
-        padding-bottom: 15px!important;
-    }
+        .chat-card {
+            padding-bottom: 15px !important;
+        }
 
-    .global-chat {
-        height: 500px;
-        resize: none;
-    }
+        .global-chat {
+            height: 500px;
+            resize: none;
+        }
 
-    .form-input-custom {
-        background-color: #202020!important;
-        border-color: #38c172;
-        color: #38c172;
-    }
+        .form-input-custom {
+            background-color: #202020 !important;
+            border-color: #38c172;
+            color: #38c172;
+        }
 
-    .forgot-password {
-        color: #38c172;
-    }
+        .forgot-password {
+            color: #38c172;
+        }
 
-    .forgot-password:hover {
-        color: #ffffff;
-    }
+        .forgot-password:hover {
+            color: #ffffff;
+        }
 
-    .form-input-custom:focus {
-        background-color: #202020;
-        border-color: #38c172;
-        color: #38c172;
-    }
+        .form-input-custom:focus {
+            background-color: #202020;
+            border-color: #38c172;
+            color: #38c172;
+        }
 
-    .text-md-right {
-        color: #38c172;
-    }
+        .text-md-right {
+            color: #38c172;
+        }
 
-    .home-info {
-        height: 500px;
-    }
+        .home-info {
+            height: 500px;
+        }
 
 
-    .tableBd {
-        width: 1200px;
-        text-align: center;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 9px;
-    }
+        .tableBd {
+            width: 1200px;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 9px;
+        }
 
-    .column-name {
-        background-color: #1d1d1d;
-        color: #38c172;
-        border: 1px solid #000000;
-        border-radius: 9px;
-    }
+        .column-name {
+            background-color: #1d1d1d;
+            color: #38c172;
+            border: 1px solid #000000;
+            border-radius: 9px;
+        }
 
-    .tables {
-        background-color: #333333;
-        color: #38c172;
+        .tables {
+            background-color: #333333;
+            color: #38c172;
 
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-    }
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
 
-    .tables-first {
-        color: #38c172;
+        .tables-first {
+            color: #38c172;
 
-        background-color: #333333;
-        border: 1px solid black;
-    }
+            background-color: #333333;
+            border: 1px solid black;
+        }
 
-    .table-finish {
-        color: #38c172;
+        .table-finish {
+            color: #38c172;
 
-        background-color: #333333;
-        border-right: 1px solid black;
-        border-bottom: 1px solid black;
-    }
+            background-color: #333333;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+        }
 
-    .add-shelter {
-        height: 40px;
-        width: 125px;
-        margin-top: 25px;
-        margin-left: 60%;
-    }
+        .add-shelter {
+            height: 40px;
+            width: 125px;
+            margin-top: 25px;
+            margin-left: 60%;
+        }
 
-    .order-by {
-        width: 150px;
-        height: 37px;
-        color: #38c172;
-        background-color: #333333;
-        border-color: #38c172;
-        margin-right: 10px;
-        border-radius: 4px;
-        option {
+        .order-by {
+            width: 150px;
+            height: 37px;
             color: #38c172;
             background-color: #333333;
             border-color: #38c172;
-            width: 150px;
             margin-right: 10px;
+            border-radius: 4px;
+
+            option {
+                color: #38c172;
+                background-color: #333333;
+                border-color: #38c172;
+                width: 150px;
+                margin-right: 10px;
+            }
         }
-    }
-    .chat{
-        width: 550px;
-    }
+        .chat {
+            width: 550px;
+        }
 
-    .chat-card-inner {
-        padding: 5px;
-    }
+        .chat-card-inner {
+            padding: 5px;
+        }
 
-    .user-list-chat {
-        margin-left: 15px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-        overflow-y: scroll;
-        height:650px;
-        width: 165px;
-    }
+        .user-list-chat {
+            margin-left: 15px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            overflow-y: scroll;
+            height: 650px;
+            width: 165px;
+        }
 
-    .chat-dont-created {
+        .chat-dont-created {
 
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5px;
-        width: 350px;
-        height: 35px;
-        font-size: 24px;
-        text-align: center;
-        color: #38c172;
-    }
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5px;
+            width: 350px;
+            height: 35px;
+            font-size: 24px;
+            text-align: center;
+            color: #38c172;
+        }
 
-    .order-type {
+        .order-type {
 
-        width: 150px;
-        height: 37px;
-        color: #38c172;
-        background-color: #333333;
-        border-color: #38c172;
-        border-radius: 4px;
-        margin-right: 10px;
-
-        option {
+            width: 150px;
+            height: 37px;
             color: #38c172;
             background-color: #333333;
             border-color: #38c172;
-            width: 150px;
+            border-radius: 4px;
             margin-right: 10px;
+
+            option {
+                color: #38c172;
+                background-color: #333333;
+                border-color: #38c172;
+                width: 150px;
+                margin-right: 10px;
+            }
         }
-    }
 
-    ::-webkit-scrollbar {
-        width: 7.5px;
-    }
+        ::-webkit-scrollbar {
+            width: 7.5px;
+        }
 
-    /* Track */
-    ::-webkit-scrollbar-track {
-        background: #202020 ;
-    }
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #202020;
+        }
 
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-        background: #38c172;
-    }
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #38c172;
+        }
 
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
 
-    .btn-chat {
-        width: 150px;
-        height: 35px;
-        padding: 5px;
-        margin: 2px;
-    }
+        .btn-chat {
+            width: 150px;
+            height: 35px;
+            padding: 5px;
+            margin: 2px;
+        }
 
-    .table-chat {
-        padding: 5px;
-        border: 1px solid #c7c7c7;
-        margin: 2px;
-    }
+        .table-chat {
+            padding: 5px;
+            border: 1px solid #c7c7c7;
+            margin: 2px;
+        }
 
-    .order-zone {
-        width: 700px;
-        height: 50px;
-        margin-top: 25px;
-        margin-left: 55%;
-        margin-right: auto;
-    }
-
-
-    .btn-color {
-        background: #38c172;
-        color: white;
-    }
-
-    .link-city {
-        color: #38c172;
-        text-decoration: underline;
-    }
-
-    .link-city:hover {
-        color: #ffffff;
-        text-decoration: none;
-    }
-
-    .linked-accounts
-    {
-        color: #2a9055;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 80%;
-    }
-
-    .linked-accounts-icons {
-        margin: 5px;
-        font-size: 25px!important;
-    }
-
-    .unlinked-accounts-icons {
-        color: #ffffff;
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        text-align: center;
-        background-color: #38c172;
-        border: #38c172 solid 2px;
-        border-radius: 4px;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
+        .order-zone {
+            width: 700px;
+            height: 50px;
+            margin-top: 25px;
+            margin-left: 55%;
+            margin-right: auto;
+        }
 
 
-    .unlinked-accounts-icons:hover {
-        color: #dedede;
-        text-decoration: none;
-    }
+        .btn-color {
+            background: #38c172;
+            color: white;
+        }
 
-    .linked-account-link {
-        color: #ffffff;
-        display: inline-block;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        margin-top: auto;
-        margin-bottom: auto;
-        background-color: #38c172;
-        border: #38c172 solid 2px;
-        border-radius: 4px;
-    }
+        .link-city {
+            color: #38c172;
+            text-decoration: underline;
+        }
 
-    .linked-account-link:hover {
-        color: #dedede;
-        text-decoration: none;
+        .link-city:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .linked-accounts {
+            color: #2a9055;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 80%;
+        }
+
+        .linked-accounts-icons {
+            margin: 5px;
+            font-size: 25px !important;
+        }
+
+        .unlinked-accounts-icons {
+            color: #ffffff;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            background-color: #38c172;
+            border: #38c172 solid 2px;
+            border-radius: 4px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+
+        .unlinked-accounts-icons:hover {
+            color: #dedede;
+            text-decoration: none;
+        }
+
+        .linked-account-link {
+            color: #ffffff;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color: #38c172;
+            border: #38c172 solid 2px;
+            border-radius: 4px;
+        }
+
+        .linked-account-link:hover {
+            color: #dedede;
+            text-decoration: none;
+        }
     }
 }

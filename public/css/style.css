@@ -1,296 +1,599 @@
 @charset "UTF-8";
 body {
   background: #202020;
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
 }
-body .home-header {
-  background-color: #333333 !important;
+@media screen and (min-device-width: 800px) {
+  body {
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  body .home-header {
+    background-color: #333333 !important;
+  }
+  body .home-header .navbar-brand {
+    color: #bc38c1;
+  }
+  body .home-header .navbar-brand:hover {
+    color: white;
+    /* Цвет ссылки при наведении */
+  }
+  body .home-header .nav-name {
+    color: #bc38c1 !important;
+  }
+  body .home-header .nav-back {
+    color: #bc38c1 !important;
+    background-color: #333333 !important;
+  }
+  body .home-header .nav-text-drop:hover {
+    color: #ffffff !important;
+    background-color: #bc38c1 !important;
+  }
+  body .home-header .nav-text-drop {
+    color: #bc38c1;
+  }
+  body .home-header .nav-name:hover {
+    color: white !important;
+  }
+  body .home-header .nav-logout-text {
+    color: #bc38c1 !important;
+  }
+  body .home-header .nav-logout-text:hover {
+    color: white !important;
+  }
+  body .col-md-8 .AccountName {
+    background-color: #bc38c1 !important;
+    height: 50px;
+  }
+  body .col-md-8 .card {
+    background-color: #333333;
+  }
+  body .col-md-8 .card .card-body .wellCUM-text {
+    font-size: 16px;
+    color: #bc38c1;
+  }
+  body .col-md-8 .card .card-body .info-body {
+    margin-right: 5px;
+    margin-left: auto;
+    color: #bc38c1;
+    width: 300px;
+  }
+  body .col-md-8 .card .bonus-info-pos {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  body .col-md-8 .card .bonus-info-pos .bonus-info {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #bc38c1;
+    border-radius: 4px;
+    color: #bc38c1;
+    background-color: #202020;
+    padding: 15px;
+    resize: none;
+  }
+  body .col-md-8 .card .accept-about {
+    color: #bc38c1;
+    border-color: #bc38c1;
+    height: 50px;
+    width: 125px;
+    margin-top: 25px;
+    margin-left: 75%;
+    margin-bottom: 15px;
+  }
+  body .col-md-8 .card .login-text-style {
+    text-align: center;
+    font-size: 24px;
+  }
+  body .button-send {
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: 90% !important;
+  }
+  body .chat-card {
+    padding-bottom: 15px !important;
+  }
+  body .global-chat {
+    height: 500px;
+    resize: none;
+  }
+  body .form-input-custom {
+    background-color: #202020 !important;
+    border-color: #bc38c1;
+    color: #bc38c1;
+  }
+  body .forgot-password {
+    color: #bc38c1;
+  }
+  body .forgot-password:hover {
+    color: #ffffff;
+  }
+  body .form-input-custom:focus {
+    background-color: #202020;
+    border-color: #bc38c1;
+    color: #bc38c1;
+  }
+  body .text-md-right {
+    color: #bc38c1;
+  }
+  body .home-info {
+    height: 500px;
+  }
+  body .tableBd {
+    width: 1200px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9px;
+  }
+  body .column-name {
+    background-color: #1d1d1d;
+    color: #bc38c1;
+    border: 1px solid #000000;
+    border-radius: 9px;
+  }
+  body .tables {
+    background-color: #333333;
+    color: #bc38c1;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  body .tables-first {
+    color: #bc38c1;
+    background-color: #333333;
+    border: 1px solid black;
+  }
+  body .table-finish {
+    color: #bc38c1;
+    background-color: #333333;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  body .add-shelter {
+    height: 40px;
+    width: 125px;
+    margin-top: 25px;
+    margin-left: 60%;
+  }
+  body .order-by {
+    width: 150px;
+    height: 37px;
+    color: #bc38c1;
+    background-color: #333333;
+    border-color: #bc38c1;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  body .order-by option {
+    color: #bc38c1;
+    background-color: #333333;
+    border-color: #bc38c1;
+    width: 150px;
+    margin-right: 10px;
+  }
+  body .chat {
+    width: 550px;
+  }
+  body .chat-card-inner {
+    padding: 5px;
+  }
+  body .user-list-chat {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    overflow-y: scroll;
+    height: 650px;
+    width: 165px;
+  }
+  body .chat-dont-created {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 350px;
+    height: 35px;
+    font-size: 24px;
+    text-align: center;
+    color: #bc38c1;
+  }
+  body .order-type {
+    width: 150px;
+    height: 37px;
+    color: #bc38c1;
+    background-color: #333333;
+    border-color: #bc38c1;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  body .order-type option {
+    color: #bc38c1;
+    background-color: #333333;
+    border-color: #bc38c1;
+    width: 150px;
+    margin-right: 10px;
+  }
+  body ::-webkit-scrollbar {
+    width: 7.5px;
+  }
+  body ::-webkit-scrollbar-track {
+    background: #202020;
+  }
+  body ::-webkit-scrollbar-thumb {
+    background: #bc38c1;
+  }
+  body ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  body .btn-chat {
+    width: 150px;
+    height: 35px;
+    padding: 5px;
+    margin: 2px;
+  }
+  body .table-chat {
+    padding: 5px;
+    border: 1px solid #c7c7c7;
+    margin: 2px;
+  }
+  body .order-zone {
+    width: 700px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 55%;
+    margin-right: auto;
+  }
+  body .btn-color {
+    background: #bc38c1;
+    color: white;
+  }
+  body .link-city {
+    color: #bc38c1;
+    text-decoration: underline;
+  }
+  body .link-city:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  body .linked-accounts {
+    color: #bc38c1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 80%;
+  }
+  body .linked-accounts-icons {
+    margin: 5px;
+    font-size: 25px !important;
+  }
+  body .unlinked-accounts-icons {
+    color: #ffffff;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #bc38c1;
+    border: #bc38c1 solid 2px;
+    border-radius: 4px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  body .unlinked-accounts-icons:hover {
+    color: #dedede;
+    text-decoration: none;
+  }
+  body .linked-account-link {
+    color: #ffffff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #bc38c1;
+    border: #bc38c1 solid 2px;
+    border-radius: 4px;
+  }
+  body .linked-account-link:hover {
+    color: #dedede;
+    text-decoration: none;
+  }
 }
-body .home-header .navbar-brand {
-  color: #38c172;
-}
-body .home-header .navbar-brand:hover {
-  color: white;
-  /* Цвет ссылки при наведении */
-}
-body .home-header .nav-name {
-  color: #38c172 !important;
-}
-body .home-header .nav-back {
-  color: #38c172 !important;
-  background-color: #333333 !important;
-}
-body .home-header .nav-text-drop:hover {
-  color: #ffffff !important;
-  background-color: #38c172 !important;
-}
-body .home-header .nav-text-drop {
-  color: #38c172;
-}
-body .home-header .nav-name:hover {
-  color: white !important;
-}
-body .home-header .nav-logout-text {
-  color: #38c172 !important;
-}
-body .home-header .nav-logout-text:hover {
-  color: white !important;
-}
-body .col-md-8 .AccountName {
-  height: 50px;
-}
-body .col-md-8 .card {
-  background-color: #333333;
-}
-body .col-md-8 .card .card-body .wellCUM-text {
-  font-size: 16px;
-  color: #38c172;
-}
-body .col-md-8 .card .card-body .info-body {
-  margin-right: 5px;
-  margin-left: auto;
-  color: #38c172;
-  width: 300px;
-}
-body .col-md-8 .card .bonus-info-pos {
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  height: 150px;
-}
-body .col-md-8 .card .bonus-info-pos .bonus-info {
-  width: 700px;
-  height: 150px;
-  margin-left: 15px;
-  margin-right: 15px;
-  border: 2px solid #38c172;
-  border-radius: 4px;
-  color: #38c172;
-  background-color: #202020;
-  padding: 15px;
-  resize: none;
-}
-body .col-md-8 .card .accept-about {
-  height: 50px;
-  width: 125px;
-  margin-top: 25px;
-  margin-left: 75%;
-  margin-bottom: 15px;
-}
-body .col-md-8 .card .login-text-style {
-  text-align: center;
-  font-size: 24px;
-}
-body .button-send {
-  margin-top: 5px;
-  margin-right: auto;
-  margin-left: 90% !important;
-}
-body .chat-card {
-  padding-bottom: 15px !important;
-}
-body .global-chat {
-  height: 500px;
-  resize: none;
-}
-body .form-input-custom {
-  background-color: #202020 !important;
-  border-color: #38c172;
-  color: #38c172;
-}
-body .forgot-password {
-  color: #38c172;
-}
-body .forgot-password:hover {
-  color: #ffffff;
-}
-body .form-input-custom:focus {
-  background-color: #202020;
-  border-color: #38c172;
-  color: #38c172;
-}
-body .text-md-right {
-  color: #38c172;
-}
-body .home-info {
-  height: 500px;
-}
-body .tableBd {
-  width: 1200px;
-  text-align: center;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 9px;
-}
-body .column-name {
-  background-color: #1d1d1d;
-  color: #38c172;
-  border: 1px solid #000000;
-  border-radius: 9px;
-}
-body .tables {
-  background-color: #333333;
-  color: #38c172;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-body .tables-first {
-  color: #38c172;
-  background-color: #333333;
-  border: 1px solid black;
-}
-body .table-finish {
-  color: #38c172;
-  background-color: #333333;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-}
-body .add-shelter {
-  height: 40px;
-  width: 125px;
-  margin-top: 25px;
-  margin-left: 60%;
-}
-body .order-by {
-  width: 150px;
-  height: 37px;
-  color: #38c172;
-  background-color: #333333;
-  border-color: #38c172;
-  margin-right: 10px;
-  border-radius: 4px;
-}
-body .order-by option {
-  color: #38c172;
-  background-color: #333333;
-  border-color: #38c172;
-  width: 150px;
-  margin-right: 10px;
-}
-body .chat {
-  width: 550px;
-}
-body .chat-card-inner {
-  padding: 5px;
-}
-body .user-list-chat {
-  margin-left: 15px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  overflow-y: scroll;
-  height: 650px;
-  width: 165px;
-}
-body .chat-dont-created {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  width: 350px;
-  height: 35px;
-  font-size: 24px;
-  text-align: center;
-  color: #38c172;
-}
-body .order-type {
-  width: 150px;
-  height: 37px;
-  color: #38c172;
-  background-color: #333333;
-  border-color: #38c172;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-body .order-type option {
-  color: #38c172;
-  background-color: #333333;
-  border-color: #38c172;
-  width: 150px;
-  margin-right: 10px;
-}
-body ::-webkit-scrollbar {
-  width: 7.5px;
-}
-body ::-webkit-scrollbar-track {
-  background: #202020;
-}
-body ::-webkit-scrollbar-thumb {
-  background: #38c172;
-}
-body ::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-body .btn-chat {
-  width: 150px;
-  height: 35px;
-  padding: 5px;
-  margin: 2px;
-}
-body .table-chat {
-  padding: 5px;
-  border: 1px solid #c7c7c7;
-  margin: 2px;
-}
-body .order-zone {
-  width: 700px;
-  height: 50px;
-  margin-top: 25px;
-  margin-left: 55%;
-  margin-right: auto;
-}
-body .btn-color {
-  background: #38c172;
-  color: white;
-}
-body .link-city {
-  color: #38c172;
-  text-decoration: underline;
-}
-body .link-city:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-body .linked-accounts {
-  color: #2a9055;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 80%;
-}
-body .linked-accounts-icons {
-  margin: 5px;
-  font-size: 25px !important;
-}
-body .unlinked-accounts-icons {
-  color: #ffffff;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  background-color: #38c172;
-  border: #38c172 solid 2px;
-  border-radius: 4px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-body .unlinked-accounts-icons:hover {
-  color: #dedede;
-  text-decoration: none;
-}
-body .linked-account-link {
-  color: #ffffff;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  background-color: #38c172;
-  border: #38c172 solid 2px;
-  border-radius: 4px;
-}
-body .linked-account-link:hover {
-  color: #dedede;
-  text-decoration: none;
+@media screen and (max-device-width: 800px) {
+  body {
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
+  }
+  body .home-header {
+    background-color: #333333 !important;
+  }
+  body .home-header .navbar-brand {
+    color: #38c172;
+  }
+  body .home-header .navbar-brand:hover {
+    color: white;
+    /* Цвет ссылки при наведении */
+  }
+  body .home-header .nav-name {
+    color: #38c172 !important;
+  }
+  body .home-header .nav-back {
+    color: #38c172 !important;
+    background-color: #333333 !important;
+  }
+  body .home-header .nav-text-drop:hover {
+    color: #ffffff !important;
+    background-color: #38c172 !important;
+  }
+  body .home-header .nav-text-drop {
+    color: #38c172;
+  }
+  body .home-header .nav-name:hover {
+    color: white !important;
+  }
+  body .home-header .nav-logout-text {
+    color: #38c172 !important;
+  }
+  body .home-header .nav-logout-text:hover {
+    color: white !important;
+  }
+  body .col-md-8 .AccountName {
+    height: 50px;
+  }
+  body .col-md-8 .card {
+    background-color: #333333;
+  }
+  body .col-md-8 .card .card-body .wellCUM-text {
+    font-size: 16px;
+    color: #38c172;
+  }
+  body .col-md-8 .card .card-body .info-body {
+    margin-right: auto;
+    margin-left: auto;
+    color: #38c172;
+    width: 300px;
+  }
+  body .col-md-8 .card .bonus-info-pos {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  body .col-md-8 .card .bonus-info-pos .bonus-info {
+    width: 100%;
+    height: 150px;
+    border: 2px solid #38c172;
+    border-radius: 4px;
+    color: #38c172;
+    background-color: #202020;
+    padding: 15px;
+    resize: none;
+  }
+  body .col-md-8 .card .accept-about {
+    height: 50px;
+    width: 25%;
+    margin-top: 25px;
+    margin-left: 60%;
+    margin-bottom: 15px;
+  }
+  body .col-md-8 .card .login-text-style {
+    text-align: center;
+    font-size: 24px;
+  }
+  body .button-send {
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: 90% !important;
+  }
+  body .chat-card {
+    padding-bottom: 15px !important;
+  }
+  body .global-chat {
+    height: 500px;
+    resize: none;
+  }
+  body .form-input-custom {
+    background-color: #202020 !important;
+    border-color: #38c172;
+    color: #38c172;
+  }
+  body .forgot-password {
+    color: #38c172;
+  }
+  body .forgot-password:hover {
+    color: #ffffff;
+  }
+  body .form-input-custom:focus {
+    background-color: #202020;
+    border-color: #38c172;
+    color: #38c172;
+  }
+  body .text-md-right {
+    color: #38c172;
+  }
+  body .home-info {
+    height: 500px;
+  }
+  body .tableBd {
+    width: 1200px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 9px;
+  }
+  body .column-name {
+    background-color: #1d1d1d;
+    color: #38c172;
+    border: 1px solid #000000;
+    border-radius: 9px;
+  }
+  body .tables {
+    background-color: #333333;
+    color: #38c172;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  body .tables-first {
+    color: #38c172;
+    background-color: #333333;
+    border: 1px solid black;
+  }
+  body .table-finish {
+    color: #38c172;
+    background-color: #333333;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  body .add-shelter {
+    height: 40px;
+    width: 125px;
+    margin-top: 25px;
+    margin-left: 60%;
+  }
+  body .order-by {
+    width: 150px;
+    height: 37px;
+    color: #38c172;
+    background-color: #333333;
+    border-color: #38c172;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  body .order-by option {
+    color: #38c172;
+    background-color: #333333;
+    border-color: #38c172;
+    width: 150px;
+    margin-right: 10px;
+  }
+  body .chat {
+    width: 550px;
+  }
+  body .chat-card-inner {
+    padding: 5px;
+  }
+  body .user-list-chat {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    overflow-y: scroll;
+    height: 650px;
+    width: 165px;
+  }
+  body .chat-dont-created {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 350px;
+    height: 35px;
+    font-size: 24px;
+    text-align: center;
+    color: #38c172;
+  }
+  body .order-type {
+    width: 150px;
+    height: 37px;
+    color: #38c172;
+    background-color: #333333;
+    border-color: #38c172;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  body .order-type option {
+    color: #38c172;
+    background-color: #333333;
+    border-color: #38c172;
+    width: 150px;
+    margin-right: 10px;
+  }
+  body ::-webkit-scrollbar {
+    width: 7.5px;
+  }
+  body ::-webkit-scrollbar-track {
+    background: #202020;
+  }
+  body ::-webkit-scrollbar-thumb {
+    background: #38c172;
+  }
+  body ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  body .btn-chat {
+    width: 150px;
+    height: 35px;
+    padding: 5px;
+    margin: 2px;
+  }
+  body .table-chat {
+    padding: 5px;
+    border: 1px solid #c7c7c7;
+    margin: 2px;
+  }
+  body .order-zone {
+    width: 700px;
+    height: 50px;
+    margin-top: 25px;
+    margin-left: 55%;
+    margin-right: auto;
+  }
+  body .btn-color {
+    background: #38c172;
+    color: white;
+  }
+  body .link-city {
+    color: #38c172;
+    text-decoration: underline;
+  }
+  body .link-city:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  body .linked-accounts {
+    color: #2a9055;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 80%;
+  }
+  body .linked-accounts-icons {
+    margin: 5px;
+    font-size: 25px !important;
+  }
+  body .unlinked-accounts-icons {
+    color: #ffffff;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #38c172;
+    border: #38c172 solid 2px;
+    border-radius: 4px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  body .unlinked-accounts-icons:hover {
+    color: #dedede;
+    text-decoration: none;
+  }
+  body .linked-account-link {
+    color: #ffffff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #38c172;
+    border: #38c172 solid 2px;
+    border-radius: 4px;
+  }
+  body .linked-account-link:hover {
+    color: #dedede;
+    text-decoration: none;
+  }
 }
